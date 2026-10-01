@@ -1,0 +1,251 @@
+/* Paleta de colores */
+:root {
+    --oscuro-fondo: #0b132b;
+    --oscuro-tarjeta: #1c2541;
+    --azul-principal: #0077b6;
+    --celeste: #00b4d8;
+    --celeste-claro: #90e0ef;
+    --blanco: #ffffff;
+    --gris-texto: #cbd5e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--oscuro-fondo);
+    color: var(--blanco);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--oscuro-tarjeta);
+    border-bottom: 3px solid var(--celeste);
+    padding: 1.5rem 2rem;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-info h1 {
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.curso {
+    color: var(--celeste);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Secciones generales */
+.seccion {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    color: var(--celeste-claro);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--azul-principal);
+    padding-left: 10px;
+}
+
+.seccion p {
+    color: var(--gris-texto);
+}
+
+/* Rejilla de tarjetas de Actividades */
+.grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-actividad {
+    background-color: var(--oscuro-tarjeta);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-actividad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 180, 216, 0.25);
+}
+
+.tag {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card-actividad h3 {
+    color: var(--blanco);
+    margin: 10px 0;
+}
+
+.card-actividad p {
+    color: var(--gris-texto);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-ver {
+    display: inline-block;
+    background-color: var(--celeste);
+    color: var(--oscuro-fondo);
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-ver:hover {
+    background-color: var(--celeste-claro);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--oscuro-tarjeta);
+    color: var(--gris-texto);
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Contenedor de botones dobles */
+.acciones-card {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Botón principal */
+.btn-ver {
+    flex: 1;
+    min-width: 110px;
+    text-align: center;
+    background-color: var(--celeste);
+    color: var(--oscuro-fondo);
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.btn-ver:hover {
+    background-color: var(--celeste-claro);
+}
+
+/* Botón secundario para la Infografía */
+.btn-secundario {
+    background-color: transparent;
+    color: var(--celeste-claro);
+    border: 1px solid var(--celeste);
+}
+
+.btn-secundario:hover {
+    background-color: rgba(0, 180, 216, 0.15);
+    color: var(--blanco);
+}
+/* Menú desplegable tipo carpeta para infografías */
+.dropdown-infografias {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    min-width: 140px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--oscuro-tarjeta);
+    min-width: 180px;
+    border: 1px solid var(--celeste);
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    margin-top: 5px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.dropdown-content a {
+    color: var(--blanco);
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+}
+
+.dropdown-infografias:hover .dropdown-content {
+    display: block;
+}
+/* Estilo para actividades pendientes */
+.btn-disabled {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #7a8a9e;
+    cursor: not-allowed;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+/* Estilos para la organización por semanas */
+.semana-bloque {
+    margin-bottom: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 180, 216, 0.15);
+}
+
+.semana-titulo {
+    color: var(--celeste);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--celeste);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
