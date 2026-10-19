@@ -2,246 +2,196 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portafolio | Arthur Sebastian Curasma Vidal</title>
+    <meta name="description" content="Trabajos del curso Algoritmos y Estructuras de Datos organizados por unidad y semana: enunciados en PDF e infografías para ver y descargar.">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#050816">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Encabezado con Logo -->
-    <header>
-        <div class="header-container">
-            <img src="logo.png" alt="Logo Universidad" class="logo">
-            <div class="header-info">
-                <h1>Arthur Sebastian Curasma Vidal</h1>
-                <p class="curso">Algoritmos y Estructuras de Datos</p>
-            </div>
+    <a class="saltar" href="#trabajos">Saltar a los trabajos</a>
+
+    <!-- ===================== CABECERA ===================== -->
+    <header class="cabecera" id="inicio">
+        <div class="contenedor cabecera-in">
+            <a class="marca" href="#inicio" aria-label="Ir al inicio">
+                <img class="marca-logo" src="logo.png" alt="">
+                <span class="marca-texto" id="marca-texto">Arthur Curasma</span>
+            </a>
+            <nav class="nav" aria-label="Principal">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#contacto" id="nav-contacto">Contacto</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Sección de Actividades por Semanas -->
-    <section class="seccion">
-        <h2>Trabajos y Actividades por Semanas</h2>
+    <main>
 
-        <!-- SEMANA 1 -->
-        <div class="semana-bloque">
-            <h3 class="semana-titulo">🗓️ Semana 1</h3>
-            <div class="grid-actividades">
-
-                <!-- Actividad 1 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Conceptos Básicos de Algoritmos</h3>
-                    <p>Definición, tipos de datos, operadores y estructuras algorítmicas iniciales.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana1/Actividad 1 - Algoritmos.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Infografías ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana1/infografia1.png" target="_blank">🖼️ Algoritmos</a>
-                                <a href="archivos/semana1/infografia2.jpg" target="_blank">🖼️ Tipos de Datos</a>
-                                <a href="archivos/semana1/infografia3.png" target="_blank">🖼️ Operadores</a>
-                                <a href="archivos/semana1/infografia4.png" target="_blank">🖼️ Estructuras Secuenciales</a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ===================== PORTADA ===================== -->
+        <section class="hero contenedor" aria-labelledby="nombre">
+            <div class="hero-texto">
+                <figure class="avatar" id="avatar">
+                    <span class="avatar-in">
+                        <span class="avatar-iniciales" id="avatar-iniciales" aria-hidden="true"></span>
+                        <img id="avatar-img" alt="">
+                    </span>
+                </figure>
+                <h1 id="nombre">Arthur Sebastian Curasma Vidal</h1>
+                <p class="hero-curso" id="curso">Algoritmos y Estructuras de Datos</p>
+                <p class="hero-intro" id="presentacion"></p>
+                <div class="hero-acciones">
+                    <a class="btn btn-primario" href="#trabajos">Ver trabajos</a>
+                    <a class="btn btn-fantasma" href="#sobre-mi">Sobre mí</a>
                 </div>
-
-                <!-- Actividad 2 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Estructuras de Control y Notas</h3>
-                    <p>Condicionales, bucles y gestión de notas en pseudocódigo/código.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana1/Actividad 2 - Notas.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Infografías ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana1/infografia5.png" target="_blank">🖼️ Estructura Selectiva Si-Entonces</a>
-                                <a href="archivos/semana1/infografia6.png" target="_blank">🖼️ Estructura Selectiva Según</a>
-                                <a href="archivos/semana1/infografia7.jpg" target="_blank">🖼️ Bucle Mientras</a>
-                                <a href="archivos/semana1/infografia8.png" target="_blank">🖼️ Bucle Para</a>
-                                <a href="archivos/semana1/infografiagestionnotas.png" target="_blank">🖼️ Gestión de Notas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-        <!-- SEMANA 2 -->
-        <div class="semana-bloque">
-            <h3 class="semana-titulo">🗓️️ Semana 2</h3>
-            <div class="grid-actividades">
+            <figure class="orden" aria-label="Animación decorativa: un arreglo de barras que se ordena con el método burbuja">
+                <div class="orden-barras" id="orden-barras" aria-hidden="true"></div>
+                <figcaption class="orden-pie">
+                    <span>Ordenamiento burbuja</span>
+                    <span class="orden-contador" id="orden-contador" aria-hidden="true"></span>
+                    <button type="button" class="icon-btn" id="orden-pausa" aria-pressed="false" aria-label="Pausar animación" title="Pausar animación"></button>
+                </figcaption>
+            </figure>
+        </section>
 
-                <!-- Actividad 1 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Arreglos Unidimensionales</h3>
-                    <p>Estructuras de datos lineales, creación, inicialización y recorrido.</p>
-                    <div class="acciones-card">
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Infografías ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana2/arreglosunidimensionales.png" target="_blank">🖼️ Arreglos Unidimensionales</a>
-                                <a href="archivos/semana2/creacioneinicializaciondelarreglo.png" target="_blank">🖼️ Creación e Inicialización</a>
-                                <a href="archivos/semana2/mostrardatos.png" target="_blank">🖼️ Mostrar Datos</a>
-                            </div>
-                        </div>
+        <!-- ===================== SOBRE MÍ ===================== -->
+        <section class="seccion contenedor" id="sobre-mi" aria-labelledby="t-sobre">
+            <div class="sobre">
+                <figure class="foto" id="foto">
+                    <span class="foto-iniciales" id="foto-iniciales" aria-hidden="true"></span>
+                    <img id="foto-img" alt="">
+                </figure>
+                <div class="sobre-texto">
+                    <h2 id="t-sobre">Sobre mí</h2>
+                    <div class="bio" id="bio"></div>
+                    <dl class="datos" id="datos-perfil"></dl>
+                    <div id="bloque-temas">
+                        <h3 class="mini-titulo">Temas que trabajé</h3>
+                        <ul class="chips" id="temas"></ul>
                     </div>
                 </div>
-
-                <!-- Actividad 2 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Arreglos Bidimensionales</h3>
-                    <p>Matrices, llenado secuencial, búsquedas y operaciones con filas, columnas y diagonales.</p>
-                    <div class="acciones-card">
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Infografías ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana2/busquedayubicaciondeunelemento.png" target="_blank">🖼️ Búsqueda y Ubicación</a>
-                                <a href="archivos/semana2/crearmatriz.png" target="_blank">🖼️ Crear Matriz</a>
-                                <a href="archivos/semana2/imprimirvisualizarlamatriz.png" target="_blank">🖼️ Imprimir Matriz</a>
-                                <a href="archivos/semana2/llenadosecuencialdematriz.png" target="_blank">🖼️ Llenado Secuencial</a>
-                                <a href="archivos/semana2/sumadeladiagonalprincipal.png" target="_blank">🖼️ Suma Diagonal Principal</a>
-                                <a href="archivos/semana2/sumaporcolumnas.png" target="_blank">🖼️ Suma por Columnas</a>
-                                <a href="archivos/semana2/sumaporfilas.png" target="_blank">🖼️ Suma por Filas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
 
-        <!-- SEMANA 3 -->
-        <div class="semana-bloque">
-            <h3 class="semana-titulo">🗓️ Semana 3</h3>
-            <div class="grid-actividades">
-
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Ejercicio 1: Arreglos Paralelos</h3>
-                    <p>Manejo e implementación de arreglos paralelos.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana3/Enunciado 1.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        <a href="archivos/semana3/arreglosparalelos.png" target="_blank" class="btn-ver btn-secundario">🖼️ Infografía</a>
-                    </div>
-                </div>
-
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Ejercicio 2: Gestión Modular</h3>
-                    <p>Gestión modular de empleados y procesamiento de datos.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana3/Enunciado 2.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        <a href="archivos/semana3/gestionmodulardeempleados.png" target="_blank" class="btn-ver btn-secundario">🖼️ Infografía</a>
-                    </div>
-                </div>
-
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Ejercicio 3: Promedio de Salón</h3>
-                    <p>Cálculos con dimensiones dinámicas.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana3/Enunciado 3.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        <a href="archivos/semana3/promediodesaloncondimensionesdinamicas.png" target="_blank" class="btn-ver btn-secundario">🖼️ Infografía</a>
-                    </div>
-                </div>
-
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Ejercicio 4: Búsqueda y Ordenamiento</h3>
-                    <p>Sistema completo de búsqueda y ordenamiento de arreglos.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana3/Enunciado 4.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        <a href="archivos/semana3/sistemacompletobusquedayordenamiento.png" target="_blank" class="btn-ver btn-secundario">🖼️ Infografía</a>
-                    </div>
-                </div>
-
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Ejercicio 5: Vectores Paralelos</h3>
-                    <p>Estructuración y manipulación de vectores paralelos.</p>
-                    <div class="acciones-card">
-                        <a href="archivos/semana3/Enunciado 5.pdf" target="_blank" class="btn-ver">📄 Documento</a>
-                        <a href="archivos/semana3/vectoresparalelos.png" target="_blank" class="btn-ver btn-secundario">🖼️ Infografía</a>
-                    </div>
-                </div>
-
+        <!-- ===================== TRABAJOS ===================== -->
+        <section class="seccion contenedor" id="trabajos" aria-labelledby="t-trabajos">
+            <div class="seccion-cab">
+                <h2 id="t-trabajos">Trabajos por semana</h2>
+                <p>Cada semana agrupa sus actividades. Abre una semana para ver sus archivos: los PDF y las infografías se pueden ver en pantalla completa, ampliar y descargar.</p>
             </div>
-        </div>
 
-        <!-- SEMANA 4 -->
-        <div class="semana-bloque">
-            <h3 class="semana-titulo">🗓️ Semana 4</h3>
-            <div class="grid-actividades">
-
-                <!-- Actividad 01 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Actividad 01: Registro Académico</h3>
-                    <p>Control y métodos de registro académico (ArregloAlumno).</p>
-                    <div class="acciones-card">
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Infografías (Procesos) ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso1.png" target="_blank">🖼️ Proceso 1</a>
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso2.png" target="_blank">🖼️ Proceso 2</a>
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso3.png" target="_blank">🖼️ Proceso 3</a>
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso4.png" target="_blank">🖼️ Proceso 4</a>
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso5.png" target="_blank">🖼️ Proceso 5</a>
-                                <a href="archivos/semana4/Actividad 01 – Control y Métodos de Registro Académico (ArregloAlumno)/proceso6.png" target="_blank">🖼️ Proceso 6</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Actividad 02 -->
-                <div class="card-actividad">
-                    <span class="tag">Unidad 1</span>
-                    <h3>Actividad 02: Control e Inventario</h3>
-                    <p>Control de equipos e inventario de hardware en Java.</p>
-                    <div class="acciones-card">
-                        <!-- Subcarpeta Arreglo Alumno -->
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Arreglo Alumno ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/busquedapornombre.png" target="_blank">🖼 Búsqueda por Nombre</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/moverprimerelementoparalfinal.png" target="_blank">🖼️ Mover Elemento al Final</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/promediogeneral.png" target="_blank">🖼️ Promedio General</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/sisdegestionidentificaciondeextremos.jpg" target="_blank">🖼️ Identificación de Extremos</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/sistemadegestionacademica.jpg" target="_blank">🖼️ Gestión Académica</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo alumno java infografias/sistemadegestionacademicaordenamiento.jpg" target="_blank">🖼️ Ordenamiento Académico</a>
-                            </div>
-                        </div>
-
-                        <!-- Subcarpeta Arreglo Computadora -->
-                        <div class="dropdown-infografias">
-                            <button class="btn-ver btn-secundario dropdown-btn">📂 Arreglo Computadora ▾</button>
-                            <div class="dropdown-content">
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo computadora java infografias/gestionbasicaactividad.jpg" target="_blank">🖼️ Gestión Básica</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo computadora java infografias/sistemadegestionauditoriayordenamiento.jpg" target="_blank">🖼️ Auditoría y Ordenamiento</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo computadora java infografias/sistemadegestionmantenimientoymodificacion.jpg" target="_blank">🖼️ Mantenimiento y Modificación</a>
-                                <a href="archivos/semana4/Actividad 02 – Control de Equipos e Inventario de Hardware/arreglo computadora java infografias/sistemagestiondeinventarioconsultasyfiltros.jpg" target="_blank">🖼️ Consultas y Filtros</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="avance" id="avance">
+                <p class="avance-texto" id="avance-texto"></p>
+                <ol class="avance-pista" id="avance-pista" aria-label="Semanas publicadas por unidad"></ol>
             </div>
+
+            <div class="herramientas">
+                <div class="tabs" role="tablist" aria-label="Unidades del curso" id="tabs"></div>
+                <div class="filtros">
+                    <label class="buscador">
+                        <span class="sr">Buscar trabajos</span>
+                        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                        <input type="search" id="buscar" placeholder="Buscar, ej. matriz" autocomplete="off">
+                    </label>
+                    <div class="segmentos" role="group" aria-label="Tipo de archivo" id="tipos">
+                        <button type="button" data-tipo="todo" aria-pressed="true">Todo</button>
+                        <button type="button" data-tipo="documento" aria-pressed="false">Documentos</button>
+                        <button type="button" data-tipo="imagen" aria-pressed="false">Infografías</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="resumen" id="resumen" aria-live="polite"></p>
+
+            <div class="semanas" id="semanas" role="tabpanel"></div>
+
+            <noscript><p class="aviso-error">Este portafolio necesita JavaScript para mostrar los trabajos.</p></noscript>
+        </section>
+
+        <!-- ===================== CONTACTO ===================== -->
+        <section class="seccion contenedor" id="contacto" aria-labelledby="t-contacto">
+            <div class="contacto">
+                <div>
+                    <h2 id="t-contacto">Contacto</h2>
+                    <p>Si tienes alguna consulta sobre un trabajo, puedes escribirme por aquí.</p>
+                </div>
+                <div class="contacto-enlaces" id="contacto-enlaces"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== PIE ===================== -->
+    <footer class="pie">
+        <div class="contenedor pie-in">
+            <img class="pie-logo" src="logo.png" alt="">
+            <p id="pie-texto"></p>
         </div>
-
-    </section>
-
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2026 Arthur Sebastian Curasma Vidal - Algoritmos y Estructuras de Datos</p>
     </footer>
 
+    <!-- ===================== VISOR (vista previa, zoom y descarga) ===================== -->
+    <div class="visor" id="visor" role="dialog" aria-modal="true" aria-labelledby="visor-titulo" hidden>
+        <div class="visor-barra">
+            <div class="visor-info">
+                <p class="visor-titulo" id="visor-titulo"></p>
+                <p class="visor-sub" id="visor-sub"></p>
+            </div>
+
+            <div class="visor-grupo" id="visor-pasos">
+                <button type="button" class="icon-btn" id="visor-ant" aria-label="Archivo anterior" title="Anterior (flecha izquierda)">
+                    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <span class="visor-contador" id="visor-contador" aria-live="polite"></span>
+                <button type="button" class="icon-btn" id="visor-sig" aria-label="Archivo siguiente" title="Siguiente (flecha derecha)">
+                    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+
+            <div class="visor-grupo" id="visor-zoom">
+                <button type="button" class="icon-btn" id="visor-menos" aria-label="Alejar" title="Alejar (tecla -)">
+                    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg>
+                </button>
+                <span class="visor-valor" id="visor-valor" aria-live="off">100%</span>
+                <button type="button" class="icon-btn" id="visor-mas" aria-label="Acercar" title="Acercar (tecla +)">
+                    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <button type="button" class="icon-btn" id="visor-ajustar" aria-label="Ajustar a la pantalla" title="Ajustar a la pantalla (tecla 0)">
+                    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+                </button>
+            </div>
+
+            <a class="btn btn-primario btn-sm" id="visor-descarga" href="#" download>
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>
+                Descargar
+            </a>
+            <a class="icon-btn" id="visor-abrir" href="#" target="_blank" rel="noopener" aria-label="Abrir en una pestaña nueva" title="Abrir en una pestaña nueva">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            </a>
+            <button type="button" class="icon-btn" id="visor-cerrar" aria-label="Cerrar vista previa" title="Cerrar (Esc)">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+        </div>
+
+        <div class="visor-cuerpo">
+            <div class="visor-escenario" id="visor-escenario" data-modo="imagen">
+                <img class="visor-img" id="visor-img" alt="" draggable="false">
+                <iframe class="visor-pdf" id="visor-pdf" title="Vista previa del documento" hidden></iframe>
+            </div>
+            <p class="visor-estado" id="visor-estado" role="status" hidden></p>
+        </div>
+
+        <p class="visor-ayuda" id="visor-ayuda">Rueda del mouse para acercar, arrastra para mover y doble clic para ampliar. Con las flechas del teclado cambias de archivo.</p>
+    </div>
+
+    <script src="datos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
