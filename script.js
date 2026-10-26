@@ -2,7 +2,7 @@
    PORTAFOLIO: LÓGICA DE LA PÁGINA
    No necesitas editar este archivo. Tus datos están en datos.js.
    ===================================================================== */
-(() => {
+   (() => {
     'use strict';
 
     const $ = (sel, ctx = document) => ctx.querySelector(sel);
@@ -158,8 +158,6 @@
         $('#curso').textContent = perfil.curso;
         $('#presentacion').textContent = perfil.presentacion || '';
 
-        $('#bio').innerHTML = (perfil.bio || []).map((t) => `<p>${esc(t)}</p>`).join('');
-
         const datos = (perfil.datos || []).filter(([, valor]) => valor);
         const dl = $('#datos-perfil');
         dl.innerHTML = datos.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
@@ -177,19 +175,15 @@
         }).join('');
         $('#contacto').hidden = !enlaces.length;
         $('#nav-contacto').hidden = !enlaces.length;
+        $('#btn-contacto').hidden = !enlaces.length;
 
         $('#pie-texto').textContent = `© ${new Date().getFullYear()} ${perfil.nombre}. ${perfil.curso}.`;
 
-        // Foto con respaldo de iniciales
+        // Iniciales (respaldo si no existe la foto)
         const partes = perfil.nombre.split(/\s+/).filter(Boolean);
         const iniciales = partes.length >= 4 ? partes[0][0] + partes[2][0] : partes.slice(0, 2).map((p) => p[0]).join('');
-        $('#foto-iniciales').textContent = iniciales.toUpperCase();
-        const foto = $('#foto-img');
-        foto.alt = `Foto de ${perfil.nombre}`;
-        foto.addEventListener('load', () => $('#foto').classList.add('tiene-foto'));
-        if (perfil.foto) foto.src = perfil.foto;
 
-        // Foto pequeña junto al nombre (misma imagen, con iniciales de respaldo)
+        // Foto de perfil junto al nombre
         $('#avatar-iniciales').textContent = iniciales.toUpperCase();
         const avatar = $('#avatar-img');
         avatar.alt = `Foto de ${perfil.nombre}`;

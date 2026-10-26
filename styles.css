@@ -233,16 +233,32 @@ h1, h2, h3, h4, h5, p, ul, ol, dl, dd, figure { margin: 0; }
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: clamp(2rem, 6vw, 5rem);
+    column-gap: clamp(2rem, 6vw, 5rem);
+    row-gap: clamp(1.75rem, 4vw, 2.5rem);
     align-items: center;
-    padding-block: clamp(3rem, 9vw, 6.5rem);
+    padding-top: clamp(2rem, 5vw, 3.5rem);
+    padding-bottom: clamp(2rem, 4vw, 3rem);
 }
+
+/* Datos y temas, integrados en la portada */
+.hero-perfil {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 1.25rem clamp(1.5rem, 5vw, 4rem);
+    align-items: start;
+    padding: 1.3rem 1.5rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+}
+.hero-perfil .datos { margin: 0; padding: 0; border: 0; }
 
 /* Foto junto al nombre */
 .avatar {
-    width: 108px;
-    height: 108px;
-    margin-bottom: 1.4rem;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1.2rem;
     padding: 3px;
     border-radius: 50%;
     background: conic-gradient(from 200deg, #2ee6c5, #8b7bff, #ff7ab6, #2ee6c5);
@@ -258,7 +274,7 @@ h1, h2, h3, h4, h5, p, ul, ol, dl, dd, figure { margin: 0; }
     border-radius: 50%;
     background: #0b1130;
 }
-.avatar-iniciales { font-size: 1.9rem; font-weight: 700; color: var(--sky); }
+.avatar-iniciales { font-size: 2.4rem; font-weight: 700; color: var(--sky); }
 .avatar img {
     position: absolute;
     inset: 0;
@@ -273,8 +289,8 @@ h1, h2, h3, h4, h5, p, ul, ol, dl, dd, figure { margin: 0; }
 .avatar.tiene-foto .avatar-iniciales { display: none; }
 
 h1 {
-    margin-bottom: 1.1rem;
-    font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+    margin-bottom: 0.8rem;
+    font-size: clamp(1.8rem, 3.6vw, 2.75rem);
     font-weight: 700;
     line-height: 1.05;
     letter-spacing: -0.025em;
@@ -359,46 +375,6 @@ h2 {
     line-height: 1.15;
     letter-spacing: -0.015em;
 }
-
-/* Sobre mí */
-.sobre {
-    display: grid;
-    grid-template-columns: minmax(220px, 300px) 1fr;
-    gap: clamp(1.75rem, 5vw, 4rem);
-    align-items: start;
-}
-.foto {
-    position: relative;
-    aspect-ratio: 4 / 5;
-    overflow: hidden;
-    border: 1px solid rgba(139, 123, 255, 0.45);
-    border-radius: var(--r-lg);
-    background: #0b1130;
-    box-shadow: 0 0 50px -20px rgba(139, 123, 255, 0.6);
-}
-.foto img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.foto.tiene-foto img { opacity: 1; }
-.foto-iniciales {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    color: var(--sky);
-}
-.foto.tiene-foto .foto-iniciales { display: none; }
-
-.bio p { max-width: 62ch; margin-bottom: 1rem; color: var(--muted); }
 
 .datos {
     display: grid;
@@ -896,8 +872,7 @@ h2 {
    --------------------------------------------------------------------- */
 @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; }
-    .sobre { grid-template-columns: 1fr; }
-    .foto { max-width: 260px; }
+    .hero-perfil { grid-template-columns: 1fr; }
     .avance-pista { margin-left: 0; }
 }
 
@@ -920,6 +895,7 @@ h2 {
     .galeria { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 
     .datos > div { grid-template-columns: 90px 1fr; }
+    .avatar { width: 120px; height: 120px; }
     .tabs { width: 100%; justify-content: space-between; }
     .tab { flex: 1; padding-inline: 0.5rem; }
     .buscador, .buscador input { width: 100%; }
