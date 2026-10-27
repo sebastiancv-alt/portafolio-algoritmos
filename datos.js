@@ -322,21 +322,124 @@
               ]
             }
           ]
+        },
+
+        /* ============================ SEMANA 6 ============================ */
+        {
+          numero: 6,
+          titulo: "Pilas",
+          actividades: [
+            {
+              titulo: "Actividad 1: Gestión de pila de estudiantes",
+              descripcion: "Métodos de la pila de estudiantes, con el código del proyecto.",
+              carpeta: "archivos/semana6/actividad_1",
+              archivos: [
+                ["Código del proyecto (GestionPilaEstudiantes)", "GestionPilaEstudiantes.zip"],
+                ["Método 1", "act_1_metodo_01.png"],
+                ["Método 2", "act_1_metodo_02.png"],
+                ["Método 3", "act_1_metodo_03.png"],
+                ["Método 4", "act_1_metodo_04.png"],
+                ["Método 5", "act_1_metodo_05.png"],
+                ["Método 6", "act_1_metodo_06.png"],
+                ["Método 7", "act_1_metodo_07.png"],
+                ["Método 8", "act_1_metodo_08.png"],
+                ["Método 9", "act_1_metodo_09.png"]
+              ]
+            },
+            {
+              titulo: "Actividad 2: Inventario de equipos",
+              descripcion: "Métodos del inventario de equipos, con el código del proyecto.",
+              carpeta: "archivos/semana6/actividad_2",
+              archivos: [
+                ["Código del proyecto (InventarioEquipos)", "InventarioEquipos.zip"],
+                ["Método 1", "act_2_metodo_01.png"],
+                ["Método 2", "act_2_metodo_02.png"],
+                ["Método 3", "act_2_metodo_03.png"],
+                ["Método 4", "act_2_metodo_04.png"],
+                ["Método 5", "act_2_metodo_05.png"],
+                ["Método 6", "act_2_metodo_06.png"],
+                ["Método 7", "act_2_metodo_07.png"],
+                ["Método 8", "act_2_metodo_08.png"],
+                ["Método 9", "act_2_metodo_09.png"],
+                ["Método 10", "act_2_metodo_10.png"]
+              ]
+            },
+            {
+              titulo: "Actividad 3: Editor con historial",
+              descripcion: "Métodos del editor con historial, con el código del proyecto.",
+              carpeta: "archivos/semana6/actividad_3",
+              archivos: [
+                ["Código del proyecto (EditorHistorial)", "EditorHistorial.zip"],
+                ["Método 1", "act_3_metodo_01.png"],
+                ["Método 2", "act_3_metodo_02.png"],
+                ["Método 3", "act_3_metodo_03.png"],
+                ["Método 4", "act_3_metodo_04.png"],
+                ["Método 5", "act_3_metodo_05.png"],
+                ["Método 6", "act_3_metodo_06.png"],
+                ["Método 7", "act_3_metodo_07.png"]
+              ]
+            }
+          ]
+        },
+
+        /* ============================ SEMANA 7 ============================ */
+        {
+          numero: 7,
+          titulo: "Colas",
+          actividades: [
+            {
+              titulo: "Actividad 1: Cola de estudiantes",
+              descripcion: "Métodos de la cola de estudiantes, con el código del proyecto.",
+              carpeta: "archivos/semana7/actividad-1",
+              archivos: [
+                ["Código del proyecto (Cola_Estudiantes)", "01_Cola_Estudiantes.zip"],
+                ["Método 1", "act_1_metodo_1.png"],
+                ["Método 2", "act_1_metodo_2.png"],
+                ["Método 3", "act_1_metodo_3.png"],
+                ["Método 4", "act_1_metodo_4.png"]
+              ]
+            },
+            {
+              titulo: "Actividad 2: Cola del banco",
+              descripcion: "Métodos de la cola del banco, con el código del proyecto.",
+              carpeta: "archivos/semana7/actividad-2",
+              archivos: [
+                ["Código del proyecto (Cola_Banco)", "02_Cola_Banco.zip"],
+                ["Método 1", "act_2_metodo_1.png"],
+                ["Método 2", "act_2_metodo_2.png"],
+                ["Método 3", "act_2_metodo_3.png"],
+                ["Método 4", "act_2_metodo_4.png"]
+              ]
+            },
+            {
+              titulo: "Actividad 3: Cola de pedidos",
+              descripcion: "Métodos de la cola de pedidos, con el código del proyecto.",
+              carpeta: "archivos/semana7/actividad-3",
+              archivos: [
+                ["Código del proyecto (Cola_Pedidos)", "03_Cola_Pedidos.zip"],
+                ["Método 3", "act_3_metodo_3.jpg"],
+                ["Método 5", "act_3_metodo_5.jpg"],
+                ["Método 6", "act_3_metodo_6.jpg"],
+                ["Método 7", "act_3_metodo_7.jpg"],
+                ["Método 8", "act_3_metodo_8.jpg"]
+              ]
+            }
+          ]
         }
-  
+
         /* ---------------------------------------------------------------
            PLANTILLA PARA UNA SEMANA NUEVA
            Copia desde "," hasta el último "}", pégala justo antes del "]"
            que cierra "semanas", y cambia los textos.
   
         ,{
-          numero: 6,
+          numero: 8,
           titulo: "Título de la semana",
           actividades: [
             {
               titulo: "Nombre de la actividad",
               descripcion: "Una frase que explique de qué trata.",
-              carpeta: "archivos/semana6",
+              carpeta: "archivos/semana8",
               archivos: [
                 ["Enunciado", "Enunciado.pdf"],
                 ["Infografía del proceso", "infografia1.png"]
