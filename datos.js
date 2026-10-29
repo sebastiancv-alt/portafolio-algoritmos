@@ -425,6 +425,45 @@
               ]
             }
           ]
+        },
+
+        /* ============================ SEMANA 8 ============================ */
+        {
+          numero: 8,
+          titulo: "Árboles",
+          actividades: [
+            {
+              titulo: "Actividad 1: Explorador de archivos",
+              descripcion: "Código del proyecto Explorador de archivos.",
+              carpeta: "archivos/semana8/actividad1",
+              archivos: [
+                ["Código del proyecto (ExploradorArchivos)", "ExploradorArchivos.zip"]
+              ]
+            },
+            {
+              titulo: "Actividad 2: Catálogo de inventario",
+              descripcion: "Código del proyecto Catálogo de inventario.",
+              carpeta: "archivos/semana8/actividad2",
+              archivos: [
+                ["Código del proyecto (CatalogoInventario)", "CatalogoInventario.zip"]
+              ]
+            },
+            {
+              titulo: "Actividad 3: Árbol de registros académicos",
+              descripcion: "Infografías y diagramas del árbol de registros académicos, con el código del proyecto.",
+              carpeta: "archivos/semana8/actividad3",
+              archivos: [
+                ["Código del proyecto (ArbolRegistrosAcademicos)", "ArbolRegistrosAcademicos.zip"],
+                ["Diagramas de la actividad", "diagramas_act_3.png"],
+                ["Infografía 2", "act_3_infografia_2.png"],
+                ["Infografía 3", "act_3_infografia_3.png"],
+                ["Infografía 4", "act_3_infografia_4.png"],
+                ["Infografía 5", "act_3_infografia_5.png"],
+                ["Infografía 6", "act_3_infografia_6.png"],
+                ["Infografía 7", "act_3_infografia_7.png"]
+              ]
+            }
+          ]
         }
 
         /* ---------------------------------------------------------------
@@ -433,13 +472,13 @@
            que cierra "semanas", y cambia los textos.
   
         ,{
-          numero: 8,
+          numero: 9,
           titulo: "Título de la semana",
           actividades: [
             {
               titulo: "Nombre de la actividad",
               descripcion: "Una frase que explique de qué trata.",
-              carpeta: "archivos/semana8",
+              carpeta: "archivos/semana9",
               archivos: [
                 ["Enunciado", "Enunciado.pdf"],
                 ["Infografía del proceso", "infografia1.png"]
