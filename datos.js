@@ -396,7 +396,16 @@
                 ["Método 1", "act_1_metodo_1.png"],
                 ["Método 2", "act_1_metodo_2.png"],
                 ["Método 3", "act_1_metodo_3.png"],
-                ["Método 4", "act_1_metodo_4.png"]
+                ["Método 4", "act_1_metodo_4.png"],
+                ["Método 5", "act_1_metodo_5.png"],
+                ["Método 6", "act_1_metodo_6.png"],
+                ["Método 7", "act_1_metodo_7.png"],
+                ["Método 8", "act_1_metodo_8.png"],
+                ["Método 9", "act_1_metodo_9.png"],
+                ["Método 10", "act_1_metodo_10.png"],
+                ["Método 11", "act_1_metodo_11.png"],
+                ["Método 12", "act_1_metodo_12.png"],
+                ["Método 13", "act_1_metodo_13.png"]
               ]
             },
             {
@@ -408,7 +417,9 @@
                 ["Método 1", "act_2_metodo_1.png"],
                 ["Método 2", "act_2_metodo_2.png"],
                 ["Método 3", "act_2_metodo_3.png"],
-                ["Método 4", "act_2_metodo_4.png"]
+                ["Método 4", "act_2_metodo_4.png"],
+                ["Método 5", "act_2_metodo_5.png"],
+                ["Método 6", "act_2_metodo_6.png"]
               ]
             },
             {
@@ -417,7 +428,10 @@
               carpeta: "archivos/semana7/actividad-3",
               archivos: [
                 ["Código del proyecto (Cola_Pedidos)", "03_Cola_Pedidos.zip"],
+                ["Método 1", "act_3_metodo_1.jpg"],
+                ["Método 2", "act_3_metodo_2.jpg"],
                 ["Método 3", "act_3_metodo_3.jpg"],
+                ["Método 4", "act_3_metodo_4.jpg"],
                 ["Método 5", "act_3_metodo_5.jpg"],
                 ["Método 6", "act_3_metodo_6.jpg"],
                 ["Método 7", "act_3_metodo_7.jpg"],
@@ -426,7 +440,6 @@
             }
           ]
         },
-
         /* ============================ SEMANA 8 ============================ */
         {
           numero: 8,
@@ -434,27 +447,44 @@
           actividades: [
             {
               titulo: "Actividad 1: Explorador de archivos",
-              descripcion: "Código del proyecto Explorador de archivos.",
+              descripcion: "Diagrama de flujo e infografías del explorador de archivos, con el código del proyecto.",
               carpeta: "archivos/semana8/actividad1",
               archivos: [
-                ["Código del proyecto (ExploradorArchivos)", "ExploradorArchivos.zip"]
+                ["Código del proyecto (ExploradorArchivos)", "ExploradorArchivos.zip"],
+                ["Diagrama de flujo", "diagrama_flujo_1.png"],
+                ["Infografía 1", "act_1_infografia_1.png"],
+                ["Infografía 2", "act_1_infografia_2.png"],
+                ["Infografía 3", "act_1_infografia_3.png"],
+                ["Infografía 4", "act_1_infografia_4.png"],
+                ["Infografía 5", "act_1_infografia_5.png"],
+                ["Infografía 6", "act_1_infografia_6.png"],
+                ["Infografía 7", "act_1_infografia_7.png"]
               ]
             },
             {
               titulo: "Actividad 2: Catálogo de inventario",
-              descripcion: "Código del proyecto Catálogo de inventario.",
+              descripcion: "Diagrama de flujo e infografías del catálogo de inventario, con el código del proyecto.",
               carpeta: "archivos/semana8/actividad2",
               archivos: [
-                ["Código del proyecto (CatalogoInventario)", "CatalogoInventario.zip"]
+                ["Código del proyecto (CatalogoInventario)", "CatalogoInventario.zip"],
+                ["Diagrama de flujo", "act_2_diagrama_flujo.png"],
+                ["Infografía 1", "act_2_infografia_1.png"],
+                ["Infografía 2", "act_2_infografia_2.png"],
+                ["Infografía 3", "act_2_infografia_3.png"],
+                ["Infografía 4", "act_2_infografia_4.png"],
+                ["Infografía 5", "act_2_infografia_5.png"],
+                ["Infografía 6", "act_2_infografia_6.png"],
+                ["Infografía 7", "act_2_infografia_7.png"]
               ]
             },
             {
               titulo: "Actividad 3: Árbol de registros académicos",
-              descripcion: "Infografías y diagramas del árbol de registros académicos, con el código del proyecto.",
+              descripcion: "Diagramas e infografías del árbol de registros académicos, con el código del proyecto.",
               carpeta: "archivos/semana8/actividad3",
               archivos: [
                 ["Código del proyecto (ArbolRegistrosAcademicos)", "ArbolRegistrosAcademicos.zip"],
                 ["Diagramas de la actividad", "diagramas_act_3.png"],
+                ["Infografía 1", "act_3_infografia_1.png"],
                 ["Infografía 2", "act_3_infografia_2.png"],
                 ["Infografía 3", "act_3_infografia_3.png"],
                 ["Infografía 4", "act_3_infografia_4.png"],
