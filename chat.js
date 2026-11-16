@@ -127,11 +127,12 @@
         const tituloUnidad = (u) => (curso.titulosUnidades || [])[u - 1] || '';
 
         const cuenta = (archivos) => {
-            const c = { img: 0, zip: 0, pdf: 0, otros: 0 };
+            const c = { img: 0, zip: 0, pdf: 0, doc: 0, otros: 0 };
             archivos.forEach((f) => {
                 if (f.tipo === 'imagen') c.img++;
                 else if (ZIPS.includes(f.ext)) c.zip++;
                 else if (f.ext === 'pdf') c.pdf++;
+                else if (['docx', 'doc'].includes(f.ext)) c.doc++;
                 else c.otros++;
             });
             return c;
@@ -141,6 +142,7 @@
             if (c.img) e.push(plural(c.img, 'infografía', 'infografías'));
             if (c.pdf) e.push(plural(c.pdf, 'PDF', 'PDF'));
             if (c.zip) e.push(c.zip === 1 ? '1 ZIP de código' : `${c.zip} ZIP de código`);
+            if (c.doc) e.push(plural(c.doc, 'informe Word', 'informes Word'));
             if (c.otros) e.push(plural(c.otros, 'otro archivo', 'otros archivos'));
             return e;
         };
@@ -154,6 +156,8 @@
             if (zip) acciones.push(accionArchivo(zip, 'Descargar código'));
             const pdf = act.archivos.find((f) => f.ext === 'pdf');
             if (pdf) acciones.push(accionArchivo(pdf, 'Abrir PDF'));
+            const word = act.archivos.find((f) => ['docx', 'doc'].includes(f.ext));
+            if (word) acciones.push(accionArchivo(word, 'Descargar informe'));
             return acciones;
         };
 
@@ -415,12 +419,19 @@
             if (!sems.length) return { texto: 'No hay trabajos publicados en ese rango.', items: [], chips: sugerencias() };
             const c = cuenta(todosLosArchivos(sems));
             let texto;
+            let clave = null;   // qué tipo de archivo se está contando (para listar solo las semanas que lo tienen)
+            if (/informe|word|docx/.test(n)) clave = 'doc';
+            else if (/codigo|zip|proyecto/.test(n)) clave = 'zip';
+            else if (/pdf|documento|enunciado/.test(n)) clave = 'pdf';
+            else if (/infograf|imagen|diagrama/.test(n)) clave = 'img';
             if (/infograf|imagen|diagrama/.test(n) && !/codigo|zip|pdf/.test(n)) texto = `Hay ${plural(c.img, 'infografía', 'infografías')} ${ambito}.`;
             else if (/codigo|zip|proyecto/.test(n)) texto = `Hay ${plural(c.zip, 'proyecto de código (ZIP)', 'proyectos de código (ZIP)')} ${ambito}.`;
+            else if (/informe|word|docx/.test(n)) texto = `Hay ${plural(c.doc, 'informe en Word', 'informes en Word')} ${ambito}.`;
             else if (/pdf|documento|enunciado/.test(n)) texto = `Hay ${plural(c.pdf, 'PDF', 'PDF')} ${ambito}.`;
             else if (/semana/.test(n)) texto = `Hay ${plural(sems.length, 'semana publicada', 'semanas publicadas')} ${ambito}.`;
             else texto = `${ambito[0].toUpperCase()}${ambito.slice(1)} hay ${plural(sems.length, 'semana', 'semanas')}, con ${plural(c.img, 'infografía', 'infografías')}, ${plural(c.pdf, 'PDF', 'PDF')} y ${plural(c.zip, 'ZIP de código', 'ZIP de código')}.`;
-            const items = sems.length > 1 ? sems.map((s) => itemSemana(s)) : [];
+            const conTipo = clave ? sems.filter((s) => cuenta(todosLosArchivos([s]))[clave] > 0) : sems;
+            const items = conTipo.length > 1 || (conTipo.length === 1 && sems.length > 1) ? conTipo.map((s) => itemSemana(s)) : [];
             return { texto: `${texto}${items.length ? ' Por semana:' : ''}`, items, chips: [] };
         }
 

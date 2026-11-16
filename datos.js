@@ -494,6 +494,124 @@
               ]
             }
           ]
+        },
+
+        /* ============================ SEMANA 9 ============================ */
+        {
+          numero: 9,
+          titulo: "Proyectos",
+          actividades: [
+            {
+              titulo: "Proyecto 2: Análisis de dependencias de tareas",
+              descripcion: "Infografía del proyecto Análisis de dependencias de tareas, con el código del proyecto.",
+              carpeta: "archivos/semana9/Proyecto02",
+              archivos: [
+                ["Código del proyecto (AnalisisDependenciasTareas)", "AnalisisDependenciasTareas.zip"],
+                ["Infografía del proyecto", "PROYECTO02_AnalisisDependenciasTareas.png"]
+              ]
+            },
+            {
+              titulo: "Proyecto 3: Evaluador de fórmulas de negocio",
+              descripcion: "Infografía del proyecto Evaluador de fórmulas de negocio, con el código del proyecto.",
+              carpeta: "archivos/semana9/Proyecto03",
+              archivos: [
+                ["Código del proyecto (EvaluadorFormulasNegocio)", "EvaluadorFormulasNegocio.zip"],
+                ["Infografía del proyecto", "PROYECTO03_EvaluadorFormulasNegocios.png"]
+              ]
+            },
+            {
+              titulo: "Proyecto 4: Sistema de costos compuestos",
+              descripcion: "Infografía del proyecto Sistema de costos compuestos, con el código del proyecto.",
+              carpeta: "archivos/semana9/Proyecto04",
+              archivos: [
+                ["Código del proyecto (SistemaCostosCompuestos)", "SistemaCostosCompuestos.zip"],
+                ["Infografía del proyecto", "PROYECTO04_SistemasCostosCompuestos.png"]
+              ]
+            }
+          ]
+        },
+
+        /* ============================ SEMANA 10 ============================ */
+        {
+          numero: 10,
+          titulo: "Listas enlazadas",
+          actividades: [
+            {
+              titulo: "Gestión de alumnos con lista",
+              descripcion: "Métodos de la gestión de alumnos con una lista enlazada, con el código del proyecto.",
+              carpeta: "archivos/semana10",
+              archivos: [
+                ["Código del proyecto (GestionAlumnosLista)", "GestionAlumnosLista-smn10.zip"],
+                ["Método 1: Insertar alumno al inicio", "metodo_01_insert_alumno_al_inicio.png"],
+                ["Método 2: Insertar alumno al final", "metodo_02_insertar_alumno_al_final.png"],
+                ["Método 3: Insertar alumno en la posición X", "metodo_03_insertar_alumno_posicionx.png"],
+                ["Método 4: Insertar alumno por referencia", "metodo_04_insertar_alumno_por_referencia.png"],
+                ["Método 5: Eliminar alumno por código", "metodo_05_eliminar_alumno_por_codigo.png"],
+                ["Método 6: Buscar alumno por código", "metodo_06_buscar_alumno_por_codigo.png"],
+                ["Método 7: Mostrar todos los alumnos", "metodo_07_mostrar_todos_los_alumnos.png"],
+                ["Método 8: Ordenar alumnos por código", "metodo_08_ordenar_alumnos_por_codigo.png"],
+                ["Método 9: Ordenar alumnos por promedio", "metodo_09_ordenar_alumnos_por_promedio.png"],
+                ["Método 10: Intercambiar dos alumnos", "metodo_10_intercambiar_dos_alumnos.png"],
+                ["Método 11: Contar elementos en una lista", "metodo_11_contar_elementos_en_una_lista.png"],
+                ["Método 12: Modificar datos de un arreglo", "metodo_12_modificar_datos_de_un_arreglo.png"],
+                ["Método 13: Verificar si la lista está vacía", "metodo_13_verificar_si_la_lista_esta_vacia.png"]
+              ]
+            }
+          ]
+        },
+
+        /* ============================ SEMANA 11 ============================ */
+        {
+          numero: 11,
+          titulo: "Listas circulares",
+          actividades: [
+            {
+              titulo: "Proyecto 1: Gestión de alumnos con lista circular",
+              descripcion: "Métodos de la gestión de alumnos con una lista circular, con el informe y el código del proyecto.",
+              carpeta: "archivos/semana11/Proyecto01",
+              archivos: [
+                ["Código del proyecto (GestionAlumnosListaCircular)", "GestionAlumnosListaCircular_semana11.zip"],
+                ["Informe del proyecto (Word)", "Informe_gest_alumnos_semana11.docx"],
+                ["Método 1", "Proyecto_01_Metodo_01.png"],
+                ["Método 2", "Proyecto_01_Metodo_02.png"],
+                ["Método 3", "Proyecto_01_Metodo_03.png"],
+                ["Método 4", "Proyecto_01_Metodo_04.png"],
+                ["Método 5", "Proyecto_01_Metodo_05.png"],
+                ["Método 6", "Proyecto_01_Metodo_06.png"],
+                ["Método 7", "Proyecto_01_Metodo_07.png"],
+                ["Método 8", "Proyecto_01_Metodo_08.png"],
+                ["Método 9", "Proyecto_01_Metodo_09.png"],
+                ["Método 10", "Proyecto_01_Metodo_10.png"],
+                ["Método 11", "Proyecto_01_Metodo_11.png"],
+                ["Método 12", "Proyecto_01_Metodo_12.png"]
+              ]
+            },
+            {
+              titulo: "Proyecto 2: Gestión de turnos de un centro médico",
+              descripcion: "Métodos de la gestión de turnos de un centro médico, con el informe y el código del proyecto.",
+              carpeta: "archivos/semana11/Proyecto02",
+              archivos: [
+                ["Código del proyecto (GestionTurnosCentroMedico)", "GestionTurnosCentroMedico_modificado.zip"],
+                ["Informe del proyecto (Word)", "Informe_Proyecto02_GestionTurnosCentroMedico.docx"],
+                ["Método 1", "Proyecto_02_Metodo_01.png"],
+                ["Método 2", "Proyecto_02_Metodo_02.png"],
+                ["Método 3", "Proyecto_02_Metodo_03.png"],
+                ["Método 4", "Proyecto_02_Metodo_04.png"],
+                ["Método 5", "Proyecto_02_Metodo_05.png"],
+                ["Método 6", "Proyecto_02_Metodo_06.png"],
+                ["Método 7", "Proyecto_02_Metodo_07.png"],
+                ["Método 8", "Proyecto_02_Metodo_08.png"],
+                ["Método 9", "Proyecto_02_Metodo_09.png"],
+                ["Método 10", "Proyecto_02_Metodo_10.png"],
+                ["Método 11", "Proyecto_02_Metodo_11.png"],
+                ["Método 12", "Proyecto_02_Metodo_12.png"],
+                ["Método 13", "Proyecto_02_Metodo_13.png"],
+                ["Método 14", "Proyecto_02_Metodo_14.png"],
+                ["Método 15", "Proyecto_02_Metodo_15.png"],
+                ["Método 16", "Proyecto_02_Metodo_16.png"]
+              ]
+            }
+          ]
         }
 
         /* ---------------------------------------------------------------
@@ -502,13 +620,13 @@
            que cierra "semanas", y cambia los textos.
   
         ,{
-          numero: 9,
+          numero: 12,
           titulo: "Título de la semana",
           actividades: [
             {
               titulo: "Nombre de la actividad",
               descripcion: "Una frase que explique de qué trata.",
-              carpeta: "archivos/semana9",
+              carpeta: "archivos/semana12",
               archivos: [
                 ["Enunciado", "Enunciado.pdf"],
                 ["Infografía del proceso", "infografia1.png"]
