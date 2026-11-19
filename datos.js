@@ -612,6 +612,59 @@
               ]
             }
           ]
+        },
+
+        /* ============================ SEMANA 12 ============================ */
+        {
+          numero: 12,
+          titulo: "Proyectos de listas",
+          actividades: [
+            {
+              titulo: "Proyecto 1: Gestión de estudiantes con lista",
+              descripcion: "Métodos de la gestión de estudiantes con una lista, con el informe y el código del proyecto.",
+              carpeta: "archivos/semana12/Proyecto1",
+              archivos: [
+                ["Código del proyecto (GestionEstudiantesLista)", "GestionEstudiantesLista.zip"],
+                ["Informe del proyecto (Word)", "Informe_GestionEstudiantesLista.docx"],
+                ["Método 1", "Proyecto01_metodo01.png"],
+                ["Método 2", "Proyecto01_metodo02.png"],
+                ["Método 3", "Proyecto01_metodo03.png"],
+                ["Método 4", "Proyecto01_metodo04.png"],
+                ["Método 5", "Proyecto01_metodo05.png"],
+                ["Método 6", "Proyecto01_metodo06.png"],
+                ["Método 7", "Proyecto01_metodo07.png"],
+                ["Método 8", "Proyecto01_metodo08.png"],
+                ["Método 9", "Proyecto01_metodo09.png"],
+                ["Método 10", "Proyecto01_metodo10.png"],
+                ["Método 11", "Proyecto01_metodo11.png"],
+                ["Método 12", "Proyecto01_metodo12.png"],
+                ["Método 13", "Proyecto01_metodo13.png"],
+                ["Método 14", "Proyecto01_metodo14.png"],
+                ["Método 15", "Proyecto01_metodo15.png"],
+                ["Método 16", "Proyecto01_metodo16.png"],
+                ["Método 17", "Proyecto01_metodo17.png"]
+              ]
+            },
+            {
+              titulo: "Proyecto 2: Gestión de turnos clínicos",
+              descripcion: "Métodos de la gestión de turnos clínicos, con el informe y el código del proyecto.",
+              carpeta: "archivos/semana12/Proyecto2",
+              archivos: [
+                ["Código del proyecto (GestionTurnosClinicos)", "GestionTurnosClinicos.zip"],
+                ["Informe del proyecto (Word)", "Informe_GestionTurnosClinicos.docx"],
+                ["Método 1", "Proyecto02_metodo01.png"],
+                ["Método 2", "Proyecto02_metodo02.png"],
+                ["Método 3", "Proyecto02_metodo03.png"],
+                ["Método 4", "Proyecto02_metodo04.png"],
+                ["Método 5", "Proyecto02_metodo05.png"],
+                ["Método 6", "Proyecto02_metodo06.png"],
+                ["Método 7", "Proyecto02_metodo07.png"],
+                ["Método 8", "Proyecto02_metodo08.png"],
+                ["Método 9", "Proyecto02_metodo09.png"],
+                ["Método 10", "Proyecto02_metodo10.png"]
+              ]
+            }
+          ]
         }
 
         /* ---------------------------------------------------------------
@@ -620,13 +673,13 @@
            que cierra "semanas", y cambia los textos.
   
         ,{
-          numero: 12,
+          numero: 13,
           titulo: "Título de la semana",
           actividades: [
             {
               titulo: "Nombre de la actividad",
               descripcion: "Una frase que explique de qué trata.",
-              carpeta: "archivos/semana12",
+              carpeta: "archivos/semana13",
               archivos: [
                 ["Enunciado", "Enunciado.pdf"],
                 ["Infografía del proceso", "infografia1.png"]
